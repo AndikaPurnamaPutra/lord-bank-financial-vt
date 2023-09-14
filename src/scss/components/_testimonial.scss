@@ -1,0 +1,230 @@
+.section-testimonial {
+    .container {
+        padding-block: 120px;
+        position: relative;
+
+        @include respondsive(xl) {
+            padding-block: 60px !important;
+        }
+        @include respondsive(sm) {
+            padding-block: 40px !important;
+        }
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .swiper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @include respondsive(md) {
+            flex-direction: column;
+            gap: 28px;
+        }
+        .subtext {
+            position: relative;
+            display: flex;
+            &-text {
+                &-desc {
+                    color: $white;
+                    font-family: $font-body;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 160%; /* 38.4px */
+                }
+            }
+            .swiper-pagination {
+                position: absolute;
+                top: 64px;
+                width: unset;
+                left: 0;
+                color: $white;
+                font-family: Eudoxus Sans;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 160%; /* 38.4px */
+
+                @include respondsive(md) {
+                    display: none;
+                }
+            }
+        }
+        .slider {
+            width: 70%;
+            overflow-x: hidden;
+            position: relative;
+
+            @include respondsive(md) {
+                width: 100%;
+            }
+            &-item {
+                .subtext-text {
+                    &-span {
+                        font-family: $font-body;
+                        color: $primary;
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 160%;
+                        text-transform: uppercase;
+                        display: inline-flex;
+                        padding: 12px 24px;
+                        border-radius: 24px;
+                        background: rgba(255, 255, 255, 0.12);
+                        margin-bottom: 36px;
+
+                        @include respondsive(md) {
+                            margin-bottom: 24px;
+                        }
+                    }
+                    &-desc {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 36px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 57.6px */
+                        margin-bottom: 120px;
+
+                        @include respondsive(xl) {
+                            font-size: 32px;
+                            margin-bottom: 60px;
+                        }
+                        @include respondsive(sm) {
+                            font-size: 20px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    &-profile {
+                        &.profile,
+                        .profile {
+                            display: flex;
+                            align-items: center;
+                            gap: 32px;
+                            img {
+                                max-width: 56px;
+                                width: 100%;
+                            }
+
+                            @include respondsive(sm) {
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 16px;
+                            }
+                            &-name {
+                                color: $white;
+                                font-family: $font-body;
+                                font-size: 24px;
+                                font-weight: 500;
+                                line-height: 160%; /* 38.4px */
+                            }
+
+                            @include respondsive(xl) {
+                                gap: 24px;
+                                img {
+                                    max-width: 48px;
+                                }
+                                &-name {
+                                    font-size: 20px;
+                                }
+                            }
+                            @include respondsive(sm) {
+                                gap: 24px;
+                                img {
+                                    max-width: 48px;
+                                }
+                                &-name {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-arrow {
+                display: inline-flex;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 16px 24px;
+                z-index: 10;
+                background-color: $bg-color;
+                img {
+                    max-width: 102px;
+                }
+                @include respondsive(sm) {
+                    padding: 16px;
+                    img {
+                        width: 64px;
+                    }
+                }
+            }
+        }
+    }
+    .user-active {
+        margin-top: 36px;
+        margin-left: 1%;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: center;
+        width: 100%;
+
+        @include respondsive(xl) {
+            margin-left: 8%;
+        }
+        @include respondsive(md) {
+            margin-left: 0;
+            justify-content: flex-start;
+        }
+        .total {
+            color: $white;
+            font-family: $font-body;
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 120%; /* 90px */
+        }
+        .desc-text {
+            color: $white;
+            font-family: $font-body;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 160%; /* 32px */
+        }
+
+        @include respondsive(md) {
+            gap: 30px;
+            .total {
+                font-size: 64px;
+            }
+            .desc-text {
+                font-size: 18px;
+            }
+        }
+        @include respondsive(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            .total {
+                font-size: 64px;
+            }
+            .desc-text {
+                font-size: 18px;
+            }
+        }
+    }
+    .decoration {
+        position: absolute;
+        bottom: 40px;
+        left: -122px;
+        max-width: 437.313px;
+
+        @include respondsive(xl) {
+            max-width: 257.313px;
+        }
+        @include respondsive(md) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,211 @@
+.section-feature {
+    display: flex;
+    padding-block: 120px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+
+    @include respondsive(xl) {
+        padding-block: 60px;
+    }
+    @include respondsive(sm) {
+        padding-block: 40px;
+    }
+    .feature {
+        flex-direction: column;
+        gap: 80px;
+        position: relative;
+        &-decoration {
+            position: absolute;
+            top: 142px;
+            right: 185px;
+            max-width: 235.494px;
+            z-index: -1;
+        }
+
+        @include respondsive(md) {
+            gap: 40px;
+            &-decoration {
+                display: none;
+            }
+        }
+    }
+    .container,
+    .container-fluid {
+        margin: auto;
+    }
+    .subtext {
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 36px;
+            &-span {
+                font-family: Eudoxus Sans;
+                color: $primary;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 160%;
+                text-transform: uppercase;
+                display: inline-flex;
+                padding: 12px 24px;
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.12);
+
+                @include respondsive(sm) {
+                    font-size: 12px;
+                }
+            }
+            &-display {
+                max-width: 739px;
+                font-weight: 700;
+
+                @include respondsive(xl) {
+                    font-size: 64px;
+                }
+
+                @include respondsive(md) {
+                    font-size: 48px;
+                    width: 70%;
+                }
+                @include respondsive(sm) {
+                    font-size: 32px;
+                    width: 100%;
+                }
+            }
+
+            @include respondsive(md) {
+                gap: 28px;
+            }
+        }
+        &-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            flex-shrink: 0;
+
+            @include respondsive(sm) {
+                gap: 20px;
+            }
+            .card {
+                display: flex;
+                padding: 60px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 60px;
+                border-radius: 52px;
+                background: $dark-gray;
+                position: relative;
+                min-height: 486px;
+                flex-shrink: 0;
+
+                @include respondsive(md) {
+                    padding: 40px;
+                }
+                @include respondsive(sm) {
+                    width: calc(100vw - 40px);
+                }
+                &-body {
+                    z-index: 1;
+                    &-display {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 40px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 120%; /* 48px */
+                        max-width: 465px;
+                        margin-bottom: 20px;
+
+                        @include respondsive(md) {
+                            font-size: 32px;
+                        }
+                        @include respondsive(sm) {
+                            font-size: 28px;
+                        }
+                    }
+                    &-desc {
+                        color: $white;
+                        font-family: $font-body;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 25.6px */
+                        max-width: 465px;
+                        z-index: 1;
+                        margin-bottom: 36px;
+                    }
+                }
+                &-icon {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 60px;
+                    z-index: 1;
+
+                    .icon {
+                        img {
+                            width: 68px;
+                        }
+                    }
+
+                    @include respondsive(sm) {
+                        gap: unset;
+                        justify-content: space-between;
+                    }
+                }
+                &-decoration {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    max-width: 276px;
+                    img {
+                        border-bottom-right-radius: 52px;
+                    }
+
+                    @include respondsive(xl) {
+                        width: 45%;
+                    }
+                }
+                &-small {
+                    .card-body {
+                        &-display,
+                        &-desc {
+                            max-width: 262px;
+                        }
+                    }
+                }
+                
+                &-first {
+                    margin-left: 120px;
+                }
+                &-three {
+                    margin-right: 120px;
+                }
+
+                @include respondsive(xl) {
+                    &-first {
+                        margin-left: 60px;
+                    }
+                    &-three {
+                        margin-right: 60px;
+                    }
+                }
+                @include respondsive(md) {
+                    &-first {
+                        margin-left: 20px;
+                    }
+                    &-three {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

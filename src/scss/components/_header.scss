@@ -1,0 +1,99 @@
+.section-header {
+    .container {
+        &-header {
+            padding-block: 120px;
+            position: relative;
+
+            @include respondsive(xl) {
+                padding-block: 60px;
+            }
+            @include respondsive(sm) {
+                padding-block: 40px;
+            }
+        }
+    }
+    .subtext {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 120px;
+
+        @include respondsive(xl) {
+            gap: 60px;
+        }
+        @include respondsive(sm) {
+            gap: 40px;
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+            &-span {
+                font-family: Eudoxus Sans;
+                color: $primary;
+                text-align: center;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 160%;
+                text-transform: uppercase;
+                display: inline-flex;
+                padding: 12px 24px;
+                border-radius: 24px;
+                background: rgba(255, 255, 255, 0.12);
+            }
+            &-display {
+                font-family: Eudoxus Sans;
+                color: $white;
+                text-align: center;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%;
+            }
+
+            @include respondsive(xl) {
+                gap: 28px;
+                &-display {
+                    font-size: 64px;
+                }
+                &-desc {
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            @include respondsive(md) {
+                &-display {
+                    font-size: 52px;
+                }
+            }
+            @include respondsive(sm) {
+                gap: 16px;
+                &-span {
+                    font-size: 12px;
+                }
+                &-display {
+                    font-size: 36px;
+                }
+            }
+        }
+        &-decoration {
+            &.decoration {
+                &-left {
+                    position: absolute;
+                    top: 190px;
+                    left: -381px;
+                    z-index: -1;
+                    max-width: 701.39px;
+                }
+                &-right {
+                    position: absolute;
+                    top: 413px;
+                    right: -162px;
+                    z-index: -1;
+                    max-width: 388.33px;
+                }
+            }
+        }
+    }
+}
