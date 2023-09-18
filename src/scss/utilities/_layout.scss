@@ -40,7 +40,7 @@ section {
         }
         @include respondsive(xl) {
             padding: 0 60px;
-            flex-direction: column;
+            // flex-direction: column;
         }
         @include respondsive(md) {
             padding: 0 20px;
@@ -61,7 +61,7 @@ section {
     }
     @include respondsive(xl) {
         padding: 0 60px;
-        flex-direction: column;
+        // flex-direction: column;
     }
     @include respondsive(md) {
         padding: 0 20px;
