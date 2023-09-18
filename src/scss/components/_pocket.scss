@@ -49,6 +49,9 @@
                 @include respondsive(xl) {
                     font-size: 64px;
                 }
+                @include respondsive(md) {
+                    font-size: 48px;
+                }
                 @include respondsive(sm) {
                     font-size: 32px;
                 }

@@ -36,6 +36,15 @@
     }
     .subtext {
         overflow-x: auto;
+        margin-bottom: 80px;
+
+        @include respondsive(md) {
+            margin-bottom: 40px;
+        }
+
+        @include respondsive(md) {
+            gap: 40px;
+        }
         &::-webkit-scrollbar {
             display: none;
         }

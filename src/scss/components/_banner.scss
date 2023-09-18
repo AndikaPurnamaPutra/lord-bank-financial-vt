@@ -1,6 +1,7 @@
 .section-banner {
     background-color: $dark-gray;
     .subtext {
+        width: 100%;
         display: inline-flex;
         padding: 100px 103px;
         flex-direction: column;
@@ -24,7 +25,10 @@
                 @include respondsive(xl) {
                     font-size: 64px;
                 }
-                @include respondsive(xl) {
+                @include respondsive(md) {
+                    font-size: 48px;
+                }
+                @include respondsive(sm) {
                     font-size: 32px;
                 }
             }
