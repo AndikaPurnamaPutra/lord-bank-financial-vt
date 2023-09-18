@@ -34,8 +34,8 @@ section {
         padding: 0 120px;
         display: flex;
         flex-direction: row;
+        margin: auto;
         &-fluid {
-            @extend .container;
             padding: unset !important;
         }
         @include respondsive(xl) {
@@ -55,8 +55,9 @@ section {
     padding: 0 120px;
     display: flex;
     flex-direction: row;
+    margin: auto;
     &-fluid {
-        @extend .container;
+        // @extend .container;
         padding: unset !important;
     }
     @include respondsive(xl) {

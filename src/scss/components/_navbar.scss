@@ -10,6 +10,9 @@
     z-index: 99;
     background: #1d1d20;
     .nav {
+        display: flex;
+        max-width: 1440px;
+        width: 100%;
         justify-content: space-between;
         align-items: center;
         padding: 24px 120px !important;
