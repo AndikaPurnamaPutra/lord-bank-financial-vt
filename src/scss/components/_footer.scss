@@ -1,4 +1,6 @@
-.footer {
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
     .container {
         @include respondsive(xl) {
             padding: 0 60px;

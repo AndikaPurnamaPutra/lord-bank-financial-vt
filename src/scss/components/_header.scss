@@ -93,6 +93,15 @@
                     z-index: -1;
                     max-width: 388.33px;
                 }
+
+                @include respondsive(md) {
+                    &-left {
+                        display: none;
+                    }
+                    &-right {
+                        display: none;
+                    }
+                }
             }
         }
     }
