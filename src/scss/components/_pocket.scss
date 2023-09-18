@@ -99,6 +99,8 @@
                 gap: 56px;
                 border-radius: 52px;
                 background: $light-gray;
+                transition: all 300ms ease;
+                cursor: pointer;
                 &-text {
                     &-label {
                         padding: 20px 57px;
@@ -118,6 +120,7 @@
                         font-size: 32px;
                         font-weight: 700;
                         line-height: 120%; /* 38.4px */
+                        transition: all 300ms ease;
                     }
                     &-desc {
                         color: $white;
@@ -126,6 +129,7 @@
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 160%; /* 25.6px */
+                        transition: all 300ms ease;
                     }
                 }
                 .wrapper {
@@ -133,6 +137,18 @@
                     flex-direction: column;
                     align-items: center;
                     gap: 12px;
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+                    .card-text {
+                        &-display {
+                            color: $dark-gray;
+                        }
+                        &-desc {
+                            color: $dark-gray;
+                        }
+                    }
                 }
             }
         }
