@@ -109,7 +109,6 @@
                 background: $dark-gray;
                 position: relative;
                 max-width: 382px;
-                // min-height: 486px;
                 flex-shrink: 0;
                 overflow: hidden;
                 transition: all 300ms ease;
@@ -123,13 +122,13 @@
                 // }
                 
                 &:hover {
-                    max-width: 450px;
+                    max-width: 585px;
+
                     .card-decoration {
-                        right: 0;
-                        bottom: 0;
+                        opacity: 1;
                     }
                     .card-icon {
-                        width: 100%;
+                        opacity: 1;
                     }
                 }
 
@@ -171,17 +170,23 @@
                     }
                 }
                 &-icon {
-                    width: 0;
+                    width: 100%;
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
                     gap: 60px;
                     z-index: 1;
+                    opacity: 0;
                     overflow: hidden;
                     transition: all 300ms ease;
                     .icon {
                         img {
-                            width: 68px;
+                            max-width: 68px;
+                            width: 100%;
+
+                        }
+                        @include respondsive(md) {
+                            max-width: 58px;
                         }
                     }
 
@@ -192,50 +197,19 @@
                 }
                 &-decoration {
                     position: absolute;
-                    bottom: -100%;
-                    right: -100%;
+                    bottom: 0;
+                    right: 0;
                     max-width: 276px;
+                    opacity: 0;
                     transition: all 500ms ease;
                     img {
                         border-bottom-right-radius: 52px;
                     }
 
                     @include respondsive(xl) {
-                        width: 45%;
+                        width: 65%;
                     }
                 }
-                // &-small {
-                //     .card-body {
-                //         &-display,
-                //         &-desc {
-                //             // max-width: 262px;
-                //         }
-                //     }
-                // }
-
-                // &-first {
-                //     margin-left: 120px;
-                // }
-                // &-three {
-                //     margin-right: 120px;
-                // }
-
-                // @include respondsive(xl) {
-                //     &-first {
-                //         margin-left: 60px;
-                //     }
-                //     &-three {
-                //         margin-right: 60px;
-                //     }
-                // }
-                // @include respondsive(md) {
-                //     &-first {
-                //         margin-left: 20px;
-                //     }
-                //     &-three {
-                //         margin-right: 20px;
-                //     }
-                // }
             }
         }
     }
