@@ -125,6 +125,8 @@
                     max-width: 585px;
 
                     .card-decoration {
+                        bottom: 0;
+                        right: 0;
                         opacity: 1;
                     }
                     .card-icon {
@@ -197,8 +199,8 @@
                 }
                 &-decoration {
                     position: absolute;
-                    bottom: 0;
-                    right: 0;
+                    bottom: -100%;
+                    right: -100%;
                     max-width: 276px;
                     opacity: 0;
                     transition: all 500ms ease;
