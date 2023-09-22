@@ -67,22 +67,23 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    border: solid 2px $black;
+    border: solid 2px $white;
     padding: 8px 20px;
     border-radius: 20px;
     color: $black;
+    background-color: transparent;
     cursor: pointer;
     &:hover {
-        background-color: $black;
+        background-color: $white;
     }
     a {
-        color: $black;
+        color: $white;
         &:hover {
-            color: $white;
+            color: $black;
         }
     }
 }
 
 .source-code:hover > a {
-    color: $white;
+    color: $black;
 }
