@@ -128,13 +128,13 @@
                     .card-icon {
                         opacity: 1;
                     }
+                    @include respondsive(sm) {
+                        width: calc(100vw - 40px);
+                    }
                 }
 
                 @include respondsive(md) {
                     padding: 40px;
-                }
-                @include respondsive(sm) {
-                    width: calc(100vw - 40px);
                 }
                 &-body {
                     z-index: 1;
