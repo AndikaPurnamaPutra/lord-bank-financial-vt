@@ -117,7 +117,7 @@
                 overflow: hidden;
                 transition: all 300ms ease;
                 
-                &:hover {
+                &:hover, .active {
                     max-width: 585px;
 
                     .card-decoration {
